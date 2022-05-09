@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.keyboard {
+    min-width: 80vw;
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(15, 1fr);
+}
+
+.input {
+    height: 200px;
+    width: 80vw;
+}
+
+.key {
+    min-height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    background: #6c56bb;
+}
+
+.key:hover {
+    box-shadow: 0px 0px 5px #000;
+}
+.press {
+    box-shadow: 0px 0px 5px #000;
+    border: 2px solid #1d0087;
+    opacity: 0.4;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+[data-code="Backquote"],
+[data-code="Backspace"],
+[data-code="Tab"],
+[data-code="CapsLock"],
+[data-code="Delete"],
+[data-code="Enter"],
+[data-code="ShiftLeft"],
+[data-code="ShiftRight"],
+[data-code="AltLeft"],
+[data-code="AltRight"],
+[data-code="ControlLeft"],
+[data-code="ControlRight"],
+[data-code="MetaLeft"],
+[data-code="ArrowUp"],
+[data-code="ArrowDown"],
+[data-code="ArrowLeft"],
+[data-code="ArrowRight"] {
+    background: #4e3f87;
+    text-transform: uppercase;
+}
+
+[data-code="Backspace"],
+[data-code="Enter"],
+[data-code="ShiftRight"] {
+    grid-column-start: 14;
+    grid-column-end: 16;
+}
+
+[data-code="CapsLock"],
+[data-code="ShiftLeft"] {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+[data-code="Space"] {
+    grid-column-start: 4;
+    grid-column-end: 10;
+}
