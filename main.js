@@ -141,7 +141,7 @@ function getLayout(langData) {
   const win = document.createElement('p');
   win.textContent = 'Клавиатура создана в операционной системе Windows';
   const changeLang = document.createElement('p');
-  changeLang.textContent = 'Для переключения языка комбинация: ctrl + alt';
+  changeLang.textContent = 'Для переключения языка комбинация: ctrl + alt (левые)';
   document.querySelector('body').appendChild(win);
   document.querySelector('body').appendChild(changeLang);
 
